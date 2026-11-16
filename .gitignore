@@ -1,0 +1,11 @@
+# Ignore heavy dependencies and kernel build artifacts
+dependency/
+*.o
+*.ko
+*.dtb
+.*.cmd
+*.mod
+*.mod.c
+*.order
+*.symvers
+.tmp_versions/

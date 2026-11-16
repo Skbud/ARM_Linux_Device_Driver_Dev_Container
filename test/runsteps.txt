@@ -1,0 +1,4 @@
+qemu-system-arm -M sabrelite -smp 4 -m 1G \
+  -display none -serial null -serial stdio \
+  -kernel zImage -dtb imx6q-sabrelite.dtb -initrd rootfs.cpio.gz \
+  -append "root=/dev/ram rdinit=/init"

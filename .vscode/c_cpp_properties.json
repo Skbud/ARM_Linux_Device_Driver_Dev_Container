@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux-ARM",
+            "includePath": [
+                "${workspaceFolder}/WS_kernel_module",
+                "${workspaceFolder}/dependency/linux/include",
+                "${workspaceFolder}/dependency/linux/arch/arm/include",
+                "${workspaceFolder}/dependency/linux/arch/arm/include/generated",
+                "${workspaceFolder}/dependency/linux/arch/arm/include/uapi",
+                "${workspaceFolder}/dependency/linux/include/uapi",
+                "${workspaceFolder}/dependency/linux/arch/arm/include/generated/uapi"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE",
+                "KBUILD_MODNAME=\"my_module\""
+            ],
+            "compilerPath": "/usr/bin/arm-linux-gnueabihf-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
